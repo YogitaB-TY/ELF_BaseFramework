@@ -24,7 +24,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base_Class implements FrameworkConstants{
 	 
 	
-	WebDriver driver;
+	public static WebDriver driver;
 	
 	@Parameters("browser")
 	@BeforeClass(alwaysRun=true)

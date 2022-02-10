@@ -22,7 +22,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ReadExcel implements FrameworkConstants{
 
 	public Workbook workbook;
-	public File filePath=new File(EXCEL_PATH);
+	public static File filePath=new File(EXCEL_PATH);
 
 	public String getData(String sheet, int row, int column) throws IOException {
 
@@ -33,13 +33,13 @@ public class ReadExcel implements FrameworkConstants{
 		return val=cell.getStringCellValue();
 	}
 
-	public Object[][] getMultipleData(String sheetName) throws IOException {
+	public static Object[][] getMultipleData(String sheetName) throws IOException {
 
 		FileInputStream fis=new FileInputStream(filePath);
 
 		 
 		Workbook book=new XSSFWorkbook(fis);
-		Sheet sheet=book.getSheet("Sheet1");
+		Sheet sheet=book.getSheet(sheetName);
 		int row_count=sheet.getPhysicalNumberOfRows();
 			
 		int col_count=sheet.getRow(0).getPhysicalNumberOfCells();

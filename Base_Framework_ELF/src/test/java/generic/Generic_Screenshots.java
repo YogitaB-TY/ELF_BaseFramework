@@ -26,7 +26,7 @@ public class Generic_Screenshots implements FrameworkConstants{
 		String ScreenShotDate=date.toString().replaceAll(":", "-");
 		TakesScreenshot takeScreenShot=(TakesScreenshot)driver;
 		File source=takeScreenShot.getScreenshotAs(OutputType.FILE);
-		File destination= new File(photo+ScreenShotDate+".jpeg");
+		File destination= new File(photo+ScreenShotDate+".png");
 		FileHandler.copy(source, destination);		
 	}
 
