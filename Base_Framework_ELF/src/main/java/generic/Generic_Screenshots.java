@@ -19,7 +19,7 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Generic_Screenshots extends Base_Test{
 	
-	public static String getPhoto(WebDriver driver) {
+	public static String getPhoto() {
 		
 		String imgPath=SCREENSHOT_PATH+name()+".png";
 		TakesScreenshot takeScreenShot=(TakesScreenshot)driver;
