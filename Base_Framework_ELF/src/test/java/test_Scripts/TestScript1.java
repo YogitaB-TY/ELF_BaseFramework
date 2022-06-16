@@ -5,14 +5,15 @@ import java.io.IOException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
 
-import generic.Base_Class;
+import generic.Base_Test;
 import generic.Generic_Screenshots;
 import generic.ReadExcel;
 import pom_scripts.LoginPage;
 import pom_scripts.WelcomePage;
 
-public class TestScript1 extends Base_Class{
+public class TestScript1 extends Base_Test{
 	
 	@Test(dataProvider = "testdata")
 	public void testScript1(String email, String pwd) throws IOException {
@@ -23,8 +24,8 @@ public class TestScript1 extends Base_Class{
 		  lp.enterValueInEmail(email); 
 		  lp.enterValueInPwd(pwd);
 		  lp.clickLoginButton();
-		  Generic_Screenshots.getPhoto(driver);
-		 
+		  test.log(LogStatus.INFO, "User is logged in");
+		  test.log(LogStatus.INFO, test.addScreenCapture(name())); 
 	}
 	
 	@DataProvider(name = "testdata")

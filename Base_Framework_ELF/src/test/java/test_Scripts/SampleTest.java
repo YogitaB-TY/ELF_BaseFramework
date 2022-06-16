@@ -3,9 +3,9 @@ package test_Scripts;
 
 import org.testng.annotations.Test;
 
-import generic.Base_Class;
+import generic.Base_Test;
 
-public class SampleTest extends Base_Class{
+public class SampleTest extends Base_Test{
 	
 	@Test
 	public void sample() {
