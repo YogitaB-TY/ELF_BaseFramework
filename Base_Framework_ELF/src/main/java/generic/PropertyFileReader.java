@@ -8,7 +8,7 @@ import java.util.Properties;
  *
  */
 
-public class PropertyFileReader  {
+public class PropertyFileReader extends Base_Test {
 	
 	/**
 	 * This method read the properties and return the value based on key
@@ -17,7 +17,7 @@ public class PropertyFileReader  {
 	 * @throws Throwable
 	 */
 	public String  getValueProperty(String key) throws Throwable {
-		FileInputStream file=new FileInputStream(FrameworkConstants.PROPERTIES_PATH);
+		FileInputStream file=new FileInputStream(PROPERTIES_PATH);
 		Properties properties=new Properties();
 		properties.load(file);
 		return properties.getProperty(key);

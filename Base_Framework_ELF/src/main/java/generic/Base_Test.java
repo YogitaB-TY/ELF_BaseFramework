@@ -28,7 +28,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *
  */
 
-public class Base_Test implements FrameworkConstants{
+public class Base_Test extends UtilityMethods{
 	 
 	
 	public static WebDriver driver;
@@ -36,11 +36,7 @@ public class Base_Test implements FrameworkConstants{
 	public static ExtentTest test;
 	
 	
-	public static String name() {
-		LocalDateTime sysdate=LocalDateTime.now();
-		String name=sysdate.toString().replace(":", "-");
-		return name;
-	}
+	
 	
 	@BeforeSuite
 	public void beforeSuit(){

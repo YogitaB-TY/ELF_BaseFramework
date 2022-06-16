@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import generic.UtilityMethods;
 
-public class WelcomePage extends UtilityMethods{
+public class WelcomePage extends BasePage{
 	
 	public WelcomePage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 	
 	@FindBy(className = "ico-login")

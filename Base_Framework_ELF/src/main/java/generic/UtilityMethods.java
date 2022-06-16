@@ -1,10 +1,16 @@
 package generic;
 
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.Set;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -13,12 +19,18 @@ import org.openqa.selenium.support.ui.Select;
  * @author Yogita
  *
  */
-public class UtilityMethods  {
+public class UtilityMethods implements FrameworkConstants  {
 
 
 
-	public WebDriver driver;	
+	public static WebDriver driver;	
 
+	public static String name() {
+		LocalDateTime sysdate=LocalDateTime.now();
+		String name=sysdate.toString().replace(":", "-");
+		return name;
+	}
+	
 	public void get_title() {
 		String title= driver.getTitle();
 		System.out.println(title);
@@ -69,5 +81,19 @@ public class UtilityMethods  {
 				break; 
 			} 
 		} 
+	}
+	public static String getPhoto() {
+
+		String imgPath=SCREENSHOT_PATH+name()+".png";
+		TakesScreenshot takeScreenShot=(TakesScreenshot)driver;
+		File source=takeScreenShot.getScreenshotAs(OutputType.FILE);
+		File destination= new File(imgPath);
+		try {
+			FileHandler.copy(source, destination);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return "."+imgPath;
 	}
 }

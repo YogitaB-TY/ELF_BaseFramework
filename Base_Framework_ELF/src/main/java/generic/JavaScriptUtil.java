@@ -9,9 +9,9 @@ import org.openqa.selenium.WebElement;
  * @author Yogita
  *
  */
-public class JavaScriptUtil {
+public class JavaScriptUtil extends Base_Test {
 
-	public WebDriver driver;
+	
 	public JavascriptExecutor javaScript = (JavascriptExecutor) driver;
 	
 	public JavaScriptUtil(WebDriver driver) {

@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import generic.Base_Test;
-import generic.Generic_Screenshots;
 import generic.ReadExcel;
 import pom_scripts.LoginPage;
 import pom_scripts.WelcomePage;
@@ -23,7 +22,7 @@ public class TestScript1 extends Base_Test{
 		  LoginPage lp=new LoginPage(driver); 
 		  lp.enterValueInEmail(email); 
 		  lp.enterValueInPwd(pwd);
-		  test.log(LogStatus.INFO, test.addScreenCapture(Generic_Screenshots.getPhoto())); 
+		  test.log(LogStatus.INFO, test.addScreenCapture(getPhoto())); 
 		  lp.clickLoginButton();
 		  test.log(LogStatus.INFO, "User is logged in");
 	}
