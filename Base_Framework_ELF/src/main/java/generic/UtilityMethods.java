@@ -82,7 +82,7 @@ public class UtilityMethods implements FrameworkConstants  {
 			} 
 		} 
 	}
-	public static String getPhoto() {
+	public static String getPhoto(WebDriver driver) {
 
 		String imgPath=SCREENSHOT_PATH+name()+".png";
 		TakesScreenshot takeScreenShot=(TakesScreenshot)driver;

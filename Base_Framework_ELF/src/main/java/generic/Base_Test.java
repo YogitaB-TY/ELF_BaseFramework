@@ -30,13 +30,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base_Test extends UtilityMethods{
 	 
-	
 	public static WebDriver driver;
 	public static ExtentReports report;
 	public static ExtentTest test;
-	
-	
-	
 	
 	@BeforeSuite
 	public void beforeSuit(){

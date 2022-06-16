@@ -22,7 +22,7 @@ public class TestScript1 extends Base_Test{
 		  LoginPage lp=new LoginPage(driver); 
 		  lp.enterValueInEmail(email); 
 		  lp.enterValueInPwd(pwd);
-		  test.log(LogStatus.INFO, test.addScreenCapture(getPhoto())); 
+		  test.log(LogStatus.INFO, test.addScreenCapture(getPhoto(driver))); 
 		  lp.clickLoginButton();
 		  test.log(LogStatus.INFO, "User is logged in");
 	}
