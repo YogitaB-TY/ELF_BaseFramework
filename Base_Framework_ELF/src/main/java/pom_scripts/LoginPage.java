@@ -17,6 +17,7 @@ public class LoginPage extends BasePage {
 	
 	@FindBy(className  ="email")
 	WebElement emailTF;
+	
 	public void enterValueInEmail(String email) {
 		
 		enter_value(emailTF, email);

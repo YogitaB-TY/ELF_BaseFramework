@@ -14,6 +14,7 @@ public class BasePage extends UtilityMethods {
 	 */
 
 	public BasePage(WebDriver driver) {
+		
 		PageFactory.initElements(driver, this);
 	}
 
