@@ -12,18 +12,14 @@ import org.openqa.selenium.WebElement;
 public class JavaScriptUtil extends Base_Test {
 
 	
-	public JavascriptExecutor javaScript = (JavascriptExecutor) driver;
 	
-	public JavaScriptUtil(WebDriver driver) {
-		driver=this.driver;
-	}
 	
 	/**
 	 * This method is used to perform Click operation using JavascriptExecutor
 	 * @param element pass the web element on which click action has to be performed
 	 */
 	public void jsClick(WebElement element) {
-		javaScript.executeScript("arguments[0].click();", element);
+		js.executeScript("arguments[0].click();", element);
 	}
 
 	/**
@@ -31,7 +27,7 @@ public class JavaScriptUtil extends Base_Test {
 	 * @param element pass the text box element in which data has to be passed
 	 */
 	public void jsSendkeys(String data,WebElement element) {
-		javaScript.executeScript("arguments[0].value='"+data+"';", element);
+		js.executeScript("arguments[0].value='"+data+"';", element);
 	}
 	
 	/**
@@ -40,7 +36,7 @@ public class JavaScriptUtil extends Base_Test {
 	 * @param y pass the Y pixels value (distance in Y direction)
 	 */
 	public void jsScrollBy(int X,int Y) {
-		javaScript.executeScript("window.scrollBy("+X+","+Y+")");
+		js.executeScript("window.scrollBy("+X+","+Y+")");
 	}
 
 	/**
@@ -49,7 +45,7 @@ public class JavaScriptUtil extends Base_Test {
 	 * @param Y give the Y-coordinate value
 	 */
 	public void jsScrollTo(int X,int Y) {
-		javaScript.executeScript("window.scrollTo("+X+","+Y+")");
+		js.executeScript("window.scrollTo("+X+","+Y+")");
 	}
 
 	/**
@@ -58,53 +54,22 @@ public class JavaScriptUtil extends Base_Test {
 	 * @param element upto which you want to scroll
 	 */
 	public void jsScrollIntoView(boolean bool,WebElement element) {
-		javaScript.executeScript("arguments[0].scrollIntoView("+bool+")",element);
+		js.executeScript("arguments[0].scrollIntoView("+bool+")",element);
 	}
 
 	/**
 	 * Used to scroll to the bottom of the page
 	 */
 	public void jsScrollToBottomOfThePage() {
-		javaScript.executeScript("arguments[0].scrollBy(0,document.body.scrollHeight')");
+		js.executeScript("arguments[0].scrollBy(0,document.body.scrollHeight')");
 	}
 	
-	/**
-	 * This method is used to put a red border for the given element
-	 * @param element 
-	 */
-	public void toPutABorderOnWebElement(WebElement element) {
-		javaScript.executeScript("arguments[0].style.border='3px solid red';",element);
-	}
-	
-	/**
-	 * This method is used to apply given color on the given element
-	 * @param color send rgb values [ rgb(0,225,0) ]
-	 * @param element
-	 */
-	public void toChangeTheColorOfWebElement(String color,WebElement element) {
-		javaScript.executeScript("arguments[0].style.backgroundColor = '"+color+"';",element);
-	}
-	
-	/**
-	 * Used to get the value present in the text box using JavascriptExecutor
-	 * @param element text box element
-	 * @return the text present in the text box
-	 */
-	public String jsFetchVale(WebElement element) {
-		return (String)javaScript.executeScript("return arguments[0].value",element);
-	}	
-	/**
-	 * Used to refresh the page 
-	 */
-	public void jsRefresh() {
-		javaScript.executeScript("history.go(0)");
-	}
 	
 	/**
 	 * Used to clear the content in the text area using JavascriptExecutor
 	 * @param element text box element
 	 */
 	public void jsClear(WebElement element) {
-		javaScript.executeScript("arguments[0].vlue='';",element);
+		js.executeScript("arguments[0].vlue='';",element);
 	}
 }

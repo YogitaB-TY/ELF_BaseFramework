@@ -3,9 +3,6 @@ package pom_scripts;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
-import generic.UtilityMethods;
 
 public class LoginPage extends BasePage {
 	
@@ -27,6 +24,7 @@ public class LoginPage extends BasePage {
 	WebElement pwdTF;
 	public void enterValueInPwd(String pwd) {
 		enter_value(pwdTF, pwd);
+		
 	}
 	
 	@FindBy(xpath = "//input[@class='button-1 login-button']")

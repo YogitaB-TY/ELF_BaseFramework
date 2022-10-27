@@ -1,11 +1,14 @@
 package generic;
 
-import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -18,6 +21,7 @@ import org.testng.annotations.Parameters;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -33,6 +37,13 @@ public class Base_Test extends UtilityMethods{
 	public static WebDriver driver;
 	public static ExtentReports report;
 	public static ExtentTest test;
+	public static WebDriverWait explicitWait;
+	public static String URL;
+	public static String browserName;
+	public static JavascriptExecutor js;
+	public static Actions action;
+	public static Select select;
+	public static WebElement element;
 	
 	@BeforeSuite
 	public void beforeSuit(){
@@ -41,11 +52,12 @@ public class Base_Test extends UtilityMethods{
 	}
 	
 	
-	@Parameters("browser")
+	
 	@BeforeClass(alwaysRun=true)
-	public void openApplication(@Optional("chrome")String browserName) throws Throwable {
+	public void browserSetup() throws Throwable {
 
 
+		browserName= getValueProperty("browser");
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
@@ -70,17 +82,18 @@ public class Base_Test extends UtilityMethods{
 		driver.manage().window().maximize();
 		Reporter.log("Browser window is maximized successfully",true);
 		test.log(LogStatus.INFO, "Browser window is maximized successfully");
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		WebDriverWait explicitWait = new WebDriverWait(driver, 10);
-		PropertyFileReader fileReader=new PropertyFileReader();
-        String URL=fileReader.getValueProperty("URL");
+		driver.manage().timeouts().implicitlyWait(TIMEOUTS_WAIT,TimeUnit.SECONDS);
+		explicitWait = new WebDriverWait(driver, TIMEOUTS_WAIT);
+		
+        URL=getValueProperty("URL");
         test.log(LogStatus.INFO, "WebPage is displayed successfully");
 		driver.get(URL);
+		initObjects();
 	}
 
 	@AfterClass(alwaysRun=true)
 	public void CloseApp() {
-		driver.quit();
+		//driver.quit();
 		test.log(LogStatus.INFO, "End Test");
 	}
 	
@@ -88,6 +101,14 @@ public class Base_Test extends UtilityMethods{
 	public void afterSuite() {
 		report.endTest(test);
 		report.flush();
+	}
+	
+	/*Initialize objects of JS, actions, select classes*/
+	public void initObjects() {
+		
+		js = (JavascriptExecutor) driver;
+		action = new Actions(driver);
+		select=new Select(element);		
 	}
 
 

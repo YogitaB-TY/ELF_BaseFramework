@@ -1,8 +1,10 @@
 package generic;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.Properties;
 import java.util.Set;
 
 import org.openqa.selenium.OutputType;
@@ -31,14 +33,14 @@ public class UtilityMethods implements FrameworkConstants  {
 		return name;
 	}
 	
-	public void get_title() {
+	public String get_title() {
 		String title= driver.getTitle();
-		System.out.println(title);
+		 return title;
 	}
 
-	public void get_url() {		
+	public String get_url() {		
 		String CurrentURL=driver.getCurrentUrl();
-		System.out.println(CurrentURL);
+		return CurrentURL;
 	}
 
 	public void clickAction(WebElement element_To_Click) {
@@ -49,16 +51,7 @@ public class UtilityMethods implements FrameworkConstants  {
 		TextField.sendKeys(value);
 	}
 
-	public Select select_classObject(WebElement DropDown){		
-		Select select= new Select(DropDown);		
-		return select;		
-	}
-
-	public Actions actions_classObject(WebDriver driver) {		
-		Actions action=new Actions(driver);
-		return action;
-
-	}
+	
 	public void switchToASpecificTitledWindow(String title) { 
 		String parentWindowId = driver.getWindowHandle(); 
 
@@ -96,4 +89,18 @@ public class UtilityMethods implements FrameworkConstants  {
 		}
 		return "."+imgPath;
 	}
+	
+	/**
+	 * This method read the properties and return the value based on key
+	 * @param key
+	 * @return value
+	 * @throws Throwable
+	 */
+	public String  getValueProperty(String key) throws Throwable {
+		FileInputStream file=new FileInputStream(PROPERTIES_PATH);
+		Properties properties=new Properties();
+		properties.load(file);
+		return properties.getProperty(key);
+	}
+
 }

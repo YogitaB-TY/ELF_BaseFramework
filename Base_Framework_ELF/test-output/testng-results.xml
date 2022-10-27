@@ -5,16 +5,16 @@
       <![CDATA[Browser window is maximized successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-10-03T11:41:08 IST" name="Default suite" finished-at="2022-10-03T11:41:22 IST" duration-ms="13883">
+  <suite started-at="2022-10-10T12:44:04 IST" name="Default suite" finished-at="2022-10-10T12:44:17 IST" duration-ms="12437">
     <groups>
     </groups>
-    <test started-at="2022-10-03T11:41:08 IST" name="Default test" finished-at="2022-10-03T11:41:22 IST" duration-ms="13883">
-      <class name="test_Scripts.TestScript1">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-10-03T11:41:08 IST" name="beforeSuit" finished-at="2022-10-03T11:41:08 IST" duration-ms="230" status="PASS">
+    <test started-at="2022-10-10T12:44:04 IST" name="Default test" finished-at="2022-10-10T12:44:17 IST" duration-ms="12437">
+      <class name="test_Scripts.LoginTestCase">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:04 IST" name="beforeSuit" finished-at="2022-10-10T12:44:04 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-10-03T11:41:08 IST" name="openApplication" finished-at="2022-10-03T11:41:20 IST" duration-ms="11570" status="PASS">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:04 IST" name="openApplication" finished-at="2022-10-10T12:44:08 IST" duration-ms="3749" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,31 +28,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="testScript1(java.lang.String,java.lang.String)[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-10-03T11:41:21 IST" name="testScript1" data-provider="testdata" finished-at="2022-10-03T11:41:21 IST" duration-ms="975" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[yogita]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[medbch]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="tc()[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:08 IST" name="tc" finished-at="2022-10-10T12:44:17 IST" duration-ms="8662" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testScript1 -->
-        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-10-03T11:41:21 IST" name="CloseApp" finished-at="2022-10-03T11:41:22 IST" duration-ms="344" status="PASS">
+        </test-method> <!-- tc -->
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:17 IST" name="CloseApp" finished-at="2022-10-10T12:44:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-10-03T11:41:22 IST" name="afterSuite" finished-at="2022-10-03T11:41:22 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:17 IST" name="afterSuite" finished-at="2022-10-10T12:44:17 IST" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- test_Scripts.TestScript1 -->
+      </class> <!-- test_Scripts.LoginTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

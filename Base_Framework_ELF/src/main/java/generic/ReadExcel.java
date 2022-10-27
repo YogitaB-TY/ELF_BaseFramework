@@ -2,10 +2,8 @@ package generic;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -26,11 +24,10 @@ public class ReadExcel implements FrameworkConstants{
 
 	public String getData(String sheet, int row, int column) throws IOException {
 
-		String val="";
 		FileInputStream fis = new FileInputStream(filePath);
 		workbook=WorkbookFactory.create(fis);
 		Cell cell=workbook.getSheet(sheet).getRow(row).getCell(column);
-		return val=cell.getStringCellValue();
+		return cell.getStringCellValue();
 	}
 
 	public static Object[][] getMultipleData(String sheetName) throws IOException {

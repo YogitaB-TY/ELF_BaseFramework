@@ -24,5 +24,7 @@ public interface FrameworkConstants {
 	String REPORTS_PATH="./Reports/";
 	
 	String TEST_NAME="ExtentDemo";
+	
+	long TIMEOUTS_WAIT= 20;
 
 }
