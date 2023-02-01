@@ -33,17 +33,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 
 public class Base_Test extends UtilityMethods{
-	 
-	public static WebDriver driver;
-	public static ExtentReports report;
-	public static ExtentTest test;
-	public static WebDriverWait explicitWait;
-	public static String URL;
-	public static String browserName;
-	public static JavascriptExecutor js;
-	public static Actions action;
-	public static Select select;
-	public static WebElement element;
+	
 	
 	@BeforeSuite
 	public void beforeSuit(){
@@ -103,12 +93,12 @@ public class Base_Test extends UtilityMethods{
 		report.flush();
 	}
 	
-	/*Initialize objects of JS, actions, select classes*/
+	/*Initialize objects of JS, actions, */
 	public void initObjects() {
 		
 		js = (JavascriptExecutor) driver;
 		action = new Actions(driver);
-		select=new Select(element);		
+				
 	}
 
 

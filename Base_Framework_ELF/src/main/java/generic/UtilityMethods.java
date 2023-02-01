@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.util.Properties;
 import java.util.Set;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 
 /**
@@ -22,10 +27,17 @@ import org.openqa.selenium.support.ui.Select;
  *
  */
 public class UtilityMethods implements FrameworkConstants  {
+	
+	public static WebDriver driver;
+	public static ExtentReports report;
+	public static ExtentTest test;
+	public static WebDriverWait explicitWait;
+	public static String URL;
+	public static String browserName;
+	public static JavascriptExecutor js;
+	public static Actions action;
 
-
-
-	public static WebDriver driver;	
+	
 
 	public static String name() {
 		LocalDateTime sysdate=LocalDateTime.now();

@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
  * @author Yogita
  *
  */
-public class JavaScriptUtil extends Base_Test {
+public class JavaScriptUtil extends UtilityMethods {
 
 	
 	
