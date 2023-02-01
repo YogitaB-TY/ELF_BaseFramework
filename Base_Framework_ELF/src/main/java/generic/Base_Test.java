@@ -93,13 +93,7 @@ public class Base_Test extends UtilityMethods{
 		report.flush();
 	}
 	
-	/*Initialize objects of JS, actions, */
-	public void initObjects() {
-		
-		js = (JavascriptExecutor) driver;
-		action = new Actions(driver);
-				
-	}
+	
 
 
 }

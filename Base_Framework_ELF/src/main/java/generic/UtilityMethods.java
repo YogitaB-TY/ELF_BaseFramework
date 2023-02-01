@@ -38,6 +38,13 @@ public class UtilityMethods implements FrameworkConstants  {
 	public static Actions action;
 
 	
+	/*Initialize objects of JS, actions, */
+	public void initObjects() {
+		
+		js = (JavascriptExecutor) driver;
+		action = new Actions(driver);
+				
+	}
 
 	public static String name() {
 		LocalDateTime sysdate=LocalDateTime.now();
