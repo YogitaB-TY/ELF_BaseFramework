@@ -5,42 +5,35 @@
       <![CDATA[Browser window is maximized successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-10-10T12:44:04 IST" name="Default suite" finished-at="2022-10-10T12:44:17 IST" duration-ms="12437">
+  <suite started-at="2023-02-01T12:58:33 IST" name="Default suite" finished-at="2023-02-01T12:58:38 IST" duration-ms="5273">
     <groups>
     </groups>
-    <test started-at="2022-10-10T12:44:04 IST" name="Default test" finished-at="2022-10-10T12:44:17 IST" duration-ms="12437">
-      <class name="test_Scripts.LoginTestCase">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:04 IST" name="beforeSuit" finished-at="2022-10-10T12:44:04 IST" duration-ms="138" status="PASS">
+    <test started-at="2023-02-01T12:58:33 IST" name="Default test" finished-at="2023-02-01T12:58:38 IST" duration-ms="5273">
+      <class name="test_Scripts.UsingJavaScript">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.UsingJavaScript@7c24b813]" started-at="2023-02-01T12:58:32 IST" name="beforeSuit" finished-at="2023-02-01T12:58:33 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:04 IST" name="openApplication" finished-at="2022-10-10T12:44:08 IST" duration-ms="3749" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test_Scripts.UsingJavaScript@7c24b813]" started-at="2023-02-01T12:58:33 IST" name="browserSetup" finished-at="2023-02-01T12:58:38 IST" duration-ms="5231" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser window is maximized successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method signature="tc()[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:08 IST" name="tc" finished-at="2022-10-10T12:44:17 IST" duration-ms="8662" status="PASS">
+        </test-method> <!-- browserSetup -->
+        <test-method signature="test()[pri:0, instance:test_Scripts.UsingJavaScript@7c24b813]" started-at="2023-02-01T12:58:38 IST" name="test" finished-at="2023-02-01T12:58:38 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc -->
-        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:17 IST" name="CloseApp" finished-at="2022-10-10T12:44:17 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.UsingJavaScript@7c24b813]" started-at="2023-02-01T12:58:38 IST" name="CloseApp" finished-at="2023-02-01T12:58:38 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.LoginTestCase@1b2abca6]" started-at="2022-10-10T12:44:17 IST" name="afterSuite" finished-at="2022-10-10T12:44:17 IST" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.UsingJavaScript@7c24b813]" started-at="2023-02-01T12:58:38 IST" name="afterSuite" finished-at="2023-02-01T12:58:38 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- test_Scripts.LoginTestCase -->
+      </class> <!-- test_Scripts.UsingJavaScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
