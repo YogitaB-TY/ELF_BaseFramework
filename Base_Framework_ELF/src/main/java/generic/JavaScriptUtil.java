@@ -68,6 +68,6 @@ public class JavaScriptUtil extends UtilityMethods {
 	 * @param element text box element
 	 */
 	public void jsClear(WebElement element) {
-		js.executeScript("arguments[0].vlue='';",element);
+		js.executeScript("arguments[0].value='';",element);
 	}
 }
