@@ -52,6 +52,7 @@ public class Base_Test extends UtilityMethods{
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 			test.log(LogStatus.INFO, "Browser is launched");
+			
 			/*
 			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
 			 * Reporter.log("Successfully Launched Chrome Browser",true);

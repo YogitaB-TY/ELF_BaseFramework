@@ -12,8 +12,15 @@ public class LoginPage extends BasePage {
 		super(driver);
 	}
 	
+	public WebElement getEmailTF() {
+		return emailTF;
+	}
+	public void setEmailTF(WebElement emailTF) {
+		this.emailTF = emailTF;
+	}
+
 	@FindBy(className  ="email")
-	WebElement emailTF;
+	private WebElement emailTF;
 	
 	public void enterValueInEmail(String email) {
 		
@@ -22,9 +29,10 @@ public class LoginPage extends BasePage {
 	
 	@FindBy(className = "password")
 	WebElement pwdTF;
+	
+	
 	public void enterValueInPwd(String pwd) {
 		enter_value(pwdTF, pwd);
-		
 	}
 	
 	@FindBy(xpath = "//input[@class='button-1 login-button']")

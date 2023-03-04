@@ -24,6 +24,7 @@ public class TestScript1 extends Base_Test{
 		  lp.enterValueInPwd(pwd);
 		  test.log(LogStatus.INFO, test.addScreenCapture(getPhoto(driver))); 
 		  lp.clickLoginButton();
+		  
 		  test.log(LogStatus.INFO, "User is logged in");
 	}
 	
@@ -32,5 +33,6 @@ public class TestScript1 extends Base_Test{
 		Object [][]testdata=ReadExcel.getMultipleData("Sheet1");
 		return testdata;
 	}
+	
 
 }
