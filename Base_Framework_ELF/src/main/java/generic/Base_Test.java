@@ -38,7 +38,7 @@ public class Base_Test extends UtilityMethods{
 	@BeforeSuite
 	public void beforeSuit(){
 		report=new ExtentReports(REPORTS_PATH+name()+".html");
-		test=report.startTest(TEST_NAME);
+		
 	}
 	
 	
@@ -46,7 +46,7 @@ public class Base_Test extends UtilityMethods{
 	@BeforeClass(alwaysRun=true)
 	public void browserSetup() throws Throwable {
 
-
+		
 		browserName= getValueProperty("browser");
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();

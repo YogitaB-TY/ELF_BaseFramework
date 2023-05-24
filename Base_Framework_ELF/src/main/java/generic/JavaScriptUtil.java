@@ -33,8 +33,8 @@ public class JavaScriptUtil extends UtilityMethods {
 	 * @param x pass the X pixels value (distance in X direction)
 	 * @param y pass the Y pixels value (distance in Y direction)
 	 */
-	public void jsScrollBy(int X,int Y) {
-		js.executeScript("window.scrollBy("+X+","+Y+")");
+	public  void jsScrollBy(int X,int Y) {
+		js.executeScript("window.scrollBy("+X+","+Y+");");
 	}
 
 	/**
@@ -59,7 +59,7 @@ public class JavaScriptUtil extends UtilityMethods {
 	 * Used to scroll to the bottom of the page
 	 */
 	public void jsScrollToBottomOfThePage() {
-		js.executeScript("arguments[0].scrollBy(0,document.body.scrollHeight')");
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 	}
 	
 	
