@@ -13,21 +13,25 @@ import pom_scripts.RegisterPage;
 import pom_scripts.WelcomePage;
 
 public class RegisterTest extends Base_Test {
-	
+
 	@Test(dataProvider = "register")
-	public void registerTest(String FirstName, String LastName) {
-		test=report.startTest(name()+"Register");
-		WelcomePage welcomePage=new WelcomePage(driver);
+	public void registerTest(String FirstName, String LastName,String email, String Password, String confirmPassword) {
+		
+		WelcomePage welcomePage = new WelcomePage(driver);
 		welcomePage.clickRegister();
 		test.log(LogStatus.FAIL, "step failed");
-		RegisterPage registerPage=new RegisterPage(driver);
-		
+		RegisterPage registerPage = new RegisterPage(driver);
+
 	}
-	
-	/*
-	 * @DataProvider(name = "register") public Object[][] registerData() throws
-	 * IOException { return ReadExcel.getMultipleData("register"); }
-	 */
-	
+
+
+	@DataProvider(name = "register") 
+	public Object[][] registerData() throws
+	IOException { 
+
+		return ReadExcel.getMultipleData("register"); 
+	}
+
+
 
 }
