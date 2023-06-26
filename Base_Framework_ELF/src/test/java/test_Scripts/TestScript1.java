@@ -35,7 +35,7 @@ public class TestScript1 extends Base_Test{
 		  javScript.jsScrollBy(0, 500);
 		  //action.sendKeys(Keys.PAGE_DOWN).build().perform();
 		  try {
-			  Assert.assertEquals(driver.findElement(By.partialLinkText("Log out")), true);
+			  Assert.assertEquals(driver.findElement(By.partialLinkText("Log out")).isDisplayed(), true);
 		  test.log(LogStatus.PASS, "User is logged in");
 		  }catch (NoSuchElementException e) {
 			test.log(LogStatus.FAIL, "User is not logged in");
