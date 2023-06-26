@@ -5,23 +5,23 @@
       <![CDATA[Browser window is maximized successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-26T15:13:15 IST" name="Default suite" finished-at="2023-06-26T15:13:46 IST" duration-ms="30835">
+  <suite started-at="2023-06-26T15:18:07 IST" name="Default suite" finished-at="2023-06-26T15:18:19 IST" duration-ms="12240">
     <groups>
     </groups>
-    <test started-at="2023-06-26T15:13:15 IST" name="Default test" finished-at="2023-06-26T15:13:46 IST" duration-ms="30835">
+    <test started-at="2023-06-26T15:18:07 IST" name="Default test" finished-at="2023-06-26T15:18:19 IST" duration-ms="12240">
       <class name="test_Scripts.TestScript1">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:13:15 IST" name="beforeSuit" finished-at="2023-06-26T15:13:15 IST" duration-ms="134" status="PASS">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:07 IST" name="beforeSuit" finished-at="2023-06-26T15:18:07 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:13:15 IST" name="browserSetup" finished-at="2023-06-26T15:13:19 IST" duration-ms="4104" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:07 IST" name="browserSetup" finished-at="2023-06-26T15:18:11 IST" duration-ms="4490" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser window is maximized successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:13:20 IST" name="setup" finished-at="2023-06-26T15:13:20 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:12 IST" name="setup" finished-at="2023-06-26T15:18:12 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,27 +32,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testScript1(java.lang.String,java.lang.String)[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:13:20 IST" name="testScript1" data-provider="testdata" finished-at="2023-06-26T15:13:46 IST" duration-ms="25905" status="PASS">
+        <test-method signature="testScript1(java.lang.String,java.lang.String)[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:12 IST" name="testScript1" data-provider="testdata" finished-at="2023-06-26T15:18:19 IST" duration-ms="7010" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[yogita]]>
+                <![CDATA[yogbelavanaki@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[medbch]]>
+                <![CDATA[Password@123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScript1 -->
-        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:13:46 IST" name="CloseApp" finished-at="2023-06-26T15:13:46 IST" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:19 IST" name="CloseApp" finished-at="2023-06-26T15:18:19 IST" duration-ms="334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:13:46 IST" name="afterSuite" finished-at="2023-06-26T15:13:46 IST" duration-ms="418" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:19 IST" name="afterSuite" finished-at="2023-06-26T15:18:20 IST" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
