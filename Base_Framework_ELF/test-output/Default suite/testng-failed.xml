@@ -5,6 +5,7 @@
     <classes>
       <class name="test_Scripts.RegisterTest">
         <methods>
+          <include name="setup"/>
           <include name="registerTest"/>
           <include name="beforeSuit"/>
           <include name="afterSuite"/>
