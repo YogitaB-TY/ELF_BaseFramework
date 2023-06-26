@@ -10,18 +10,42 @@ public class WelcomePage extends BasePage{
 		super(driver);
 	}
 	
-	@FindBy(className = "ico-login")
-	WebElement Loginlink;
+	@FindBy(id = "loginBtn")
+	private WebElement loginButton;
 	
-	public void clickLogin() {
-		clickAction(Loginlink);
+	@FindBy(partialLinkText = "ELECTRONICS")
+	private WebElement electronicsLink;
+
+	/**
+	 * @return the loginButton
+	 */
+	public WebElement getLoginButton() {
+		return loginButton;
+	}
+
+	/**
+	 * @param loginButton the loginButton to set
+	 */
+	public void setLoginButton(WebElement loginButton) {
+		this.loginButton = loginButton;
+	}
+
+	/**
+	 * @return the electronicsLink
+	 */
+	public WebElement getElectronicsLink() {
+		return electronicsLink;
+	}
+
+	/**
+	 * @param electronicsLink the electronicsLink to set
+	 */
+	public void setElectronicsLink(WebElement electronicsLink) {
+		this.electronicsLink = electronicsLink;
 	}
 	
-	@FindBy(className = "ico-register")
-	WebElement RegisterLink;
 	
-	public void clickRegister() {
-		clickAction(RegisterLink);
-	}
+	
+	
 
 }
