@@ -22,6 +22,7 @@ public class RegisterTest extends Base_Test {
 		test.log(LogStatus.FAIL, "step failed");
 		RegisterPage registerPage = new RegisterPage(driver);
 
+		
 	}
 
 

@@ -3,8 +3,8 @@ package test_Scripts;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -34,7 +34,12 @@ public class TestScript1 extends Base_Test{
 		  JavaScriptUtil javScript=new JavaScriptUtil();
 		  javScript.jsScrollBy(0, 500);
 		  //action.sendKeys(Keys.PAGE_DOWN).build().perform();
+		  try {
+			  Assert.assertEquals(driver.findElement(By.partialLinkText("Log out")), true);
 		  test.log(LogStatus.PASS, "User is logged in");
+		  }catch (NoSuchElementException e) {
+			test.log(LogStatus.FAIL, "User is not logged in");
+		}
 	}
 	
 	@DataProvider(name = "testdata")
