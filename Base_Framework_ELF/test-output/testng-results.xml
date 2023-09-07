@@ -5,58 +5,46 @@
       <![CDATA[Browser window is maximized successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-26T15:18:07 IST" name="Default suite" finished-at="2023-06-26T15:18:19 IST" duration-ms="12240">
+  <suite started-at="2023-09-07T12:45:33 IST" name="Default suite" finished-at="2023-09-07T12:45:40 IST" duration-ms="6148">
     <groups>
     </groups>
-    <test started-at="2023-06-26T15:18:07 IST" name="Default test" finished-at="2023-06-26T15:18:19 IST" duration-ms="12240">
-      <class name="test_Scripts.TestScript1">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:07 IST" name="beforeSuit" finished-at="2023-06-26T15:18:07 IST" duration-ms="151" status="PASS">
+    <test started-at="2023-09-07T12:45:33 IST" name="Default test" finished-at="2023-09-07T12:45:40 IST" duration-ms="6148">
+      <class name="test_Scripts.SampleTest">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.SampleTest@4f2b503c]" started-at="2023-09-07T12:45:33 IST" name="beforeSuit" finished-at="2023-09-07T12:45:33 IST" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:07 IST" name="browserSetup" finished-at="2023-06-26T15:18:11 IST" duration-ms="4490" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test_Scripts.SampleTest@4f2b503c]" started-at="2023-09-07T12:45:33 IST" name="browserSetup" finished-at="2023-09-07T12:45:39 IST" duration-ms="5678" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser window is maximized successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:12 IST" name="setup" finished-at="2023-06-26T15:18:12 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:test_Scripts.SampleTest@4f2b503c]" started-at="2023-09-07T12:45:39 IST" name="setup" finished-at="2023-09-07T12:45:39 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void test_Scripts.TestScript1.testScript1(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void test_Scripts.SampleTest.sample()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testScript1(java.lang.String,java.lang.String)[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:12 IST" name="testScript1" data-provider="testdata" finished-at="2023-06-26T15:18:19 IST" duration-ms="7010" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[yogbelavanaki@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="sample()[pri:0, instance:test_Scripts.SampleTest@4f2b503c]" started-at="2023-09-07T12:45:39 IST" name="sample" finished-at="2023-09-07T12:45:39 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testScript1 -->
-        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:19 IST" name="CloseApp" finished-at="2023-06-26T15:18:19 IST" duration-ms="334" status="PASS">
+        </test-method> <!-- sample -->
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.SampleTest@4f2b503c]" started-at="2023-09-07T12:45:39 IST" name="CloseApp" finished-at="2023-09-07T12:45:40 IST" duration-ms="429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.TestScript1@57cf54e1]" started-at="2023-06-26T15:18:19 IST" name="afterSuite" finished-at="2023-06-26T15:18:20 IST" duration-ms="413" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.SampleTest@4f2b503c]" started-at="2023-09-07T12:45:40 IST" name="afterSuite" finished-at="2023-09-07T12:45:40 IST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- test_Scripts.TestScript1 -->
+      </class> <!-- test_Scripts.SampleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

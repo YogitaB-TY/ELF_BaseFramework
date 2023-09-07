@@ -55,13 +55,13 @@ public class Base_Test extends UtilityMethods{
 	public void browserSetup() throws Throwable {
 		browserName= getValueProperty("browser");
 		if(browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			System.setProperty(CHROME_KEY, CHROME_PATH);
 			driver=new ChromeDriver();
 			
 			
 		}else if(browserName.equalsIgnoreCase("firefox")) {
 
-			WebDriverManager.firefoxdriver().setup();
+			System.setProperty(FIREFOX_KEY, FIREFOX_PATH);
 			driver=new FirefoxDriver();
 			
 		}else {
